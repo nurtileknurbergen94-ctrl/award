@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-award-black: #101010;
+  --color-award-graphite: #191919;
+  --color-award-dark: #252525;
+  --color-award-gold: #C9A568;
+  --color-award-gold-light: #E8C995;
+  --color-award-burgundy: #571C27;
+  --color-award-cream: #F5F0E8;
+  --color-award-muted: #A9A9A9;
+
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-award-black text-award-cream font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse at 20% 0%, rgba(87, 28, 39, 0.18) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 20%, rgba(201, 165, 104, 0.06) 0%, transparent 40%),
+      linear-gradient(180deg, #101010 0%, #141414 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgba(201, 165, 104, 0.35);
+    color: #F5F0E8;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .container-award {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .gold-line {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-award-gold/60 to-transparent;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #E8C995 0%, #C9A568 45%, #E8C995 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-award-gold px-6 py-3 text-sm font-semibold tracking-wide text-award-black transition-all duration-300 hover:bg-award-gold-light hover:shadow-[0_0_24px_rgba(201,165,104,0.25)] active:scale-[0.98];
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-award-gold/50 bg-transparent px-6 py-3 text-sm font-semibold tracking-wide text-award-gold transition-all duration-300 hover:border-award-gold hover:bg-award-gold/10 active:scale-[0.98];
+  }
+
+  .btn-burgundy {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-award-burgundy px-6 py-3 text-sm font-semibold tracking-wide text-award-cream transition-all duration-300 hover:brightness-110 active:scale-[0.98];
+  }
+
+  .card-surface {
+    @apply overflow-hidden rounded-sm border border-award-gold/15 bg-award-graphite/80 backdrop-blur-sm transition-all duration-500;
+  }
+
+  .card-surface:hover {
+    @apply border-award-gold/40 shadow-[0_12px_40px_rgba(0,0,0,0.45)];
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-semibold tracking-wide text-award-cream sm:text-4xl md:text-5xl;
+  }
+
+  .section-eyebrow {
+    @apply mb-3 text-xs font-medium uppercase tracking-[0.28em] text-award-gold;
+  }
+
+  .input-field {
+    @apply w-full rounded-sm border border-award-gold/20 bg-award-dark/80 px-4 py-3 text-sm text-award-cream outline-none transition placeholder:text-award-muted/60 focus:border-award-gold/60 focus:ring-1 focus:ring-award-gold/30;
+  }
+
+  .texture-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+}
+
+/* Lightbox */
+.lightbox-backdrop {
+  @apply fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://award.kz/ru</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://award.kz/ru"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://award.kz/kk"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://award.kz/ru"/>
+  </url>
+  <url>
+    <loc>https://award.kz/kk</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://award.kz/ru"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://award.kz/kk"/>
+  </url>
+  <url><loc>https://award.kz/ru/services</loc></url>
+  <url><loc>https://award.kz/kk/services</loc></url>
+  <url><loc>https://award.kz/ru/catalog</loc></url>
+  <url><loc>https://award.kz/kk/catalog</loc></url>
+  <url><loc>https://award.kz/ru/medals</loc></url>
+  <url><loc>https://award.kz/kk/medals</loc></url>
+  <url><loc>https://award.kz/ru/trophies</loc></url>
+  <url><loc>https://award.kz/kk/trophies</loc></url>
+  <url><loc>https://award.kz/ru/souvenirs</loc></url>
+  <url><loc>https://award.kz/kk/souvenirs</loc></url>
+  <url><loc>https://award.kz/ru/printing</loc></url>
+  <url><loc>https://award.kz/kk/printing</loc></url>
+  <url><loc>https://award.kz/ru/galvanic</loc></url>
+  <url><loc>https://award.kz/kk/galvanic</loc></url>
+  <url><loc>https://award.kz/ru/portfolio</loc></url>
+  <url><loc>https://award.kz/kk/portfolio</loc></url>
+  <url><loc>https://award.kz/ru/contacts</loc></url>
+  <url><loc>https://award.kz/kk/contacts</loc></url>
+  <url><loc>https://award.kz/ru/order</loc></url>
+  <url><loc>https://award.kz/kk/order</loc></url>
+  <url><loc>https://award.kz/ru/services/design</loc></url>
+  <url><loc>https://award.kz/ru/services/modeling</loc></url>
+  <url><loc>https://award.kz/ru/services/awards</loc></url>
+  <url><loc>https://award.kz/ru/services/branding</loc></url>
+  <url><loc>https://award.kz/ru/services/souvenirs</loc></url>
+  <url><loc>https://award.kz/ru/services/printing</loc></url>
+  <url><loc>https://award.kz/ru/services/architecture</loc></url>
+  <url><loc>https://award.kz/ru/services/custom</loc></url>
+  <url><loc>https://award.kz/ru/services/galvanic</loc></url>
+</urlset>
